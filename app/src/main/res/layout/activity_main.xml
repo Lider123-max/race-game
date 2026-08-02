@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="سباق السرعة"
+        android:textColor="@color/text_white"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="المطور: الزعيم عبدالكريم"
+        android:textColor="@color/start_btn"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/text_white"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="اللاعب الأول"
+        android:textColor="@color/player1_color"
+        android:textSize="16sp"/>
+
+    <ProgressBar
+        android:id="@+id/track1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:max="100"
+        android:progress="0"
+        android:progressTint="@color/player1_color"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="اللاعب الثاني"
+        android:textColor="@color/player2_color"
+        android:textSize="16sp"/>
+
+    <ProgressBar
+        android:id="@+id/track2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:max="100"
+        android:progress="0"
+        android:progressTint="@color/player2_color"
+        android:layout_marginBottom="24dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnPlayer1"
+            android:text="اضغط!"
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/player1_color"
+            android:textColor="@color/text_white"
+            android:enabled="false"
+            android:onClick="onPlayer1Tap"/>
+
+        <Button
+            android:id="@+id/btnPlayer2"
+            android:text="اضغط!"
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/player2_color"
+            android:textColor="@color/text_white"
+            android:enabled="false"
+            android:onClick="onPlayer2Tap"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:text="ابدأ اللعب"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/start_btn"
+        android:textColor="@color/text_white"
+        android:onClick="onStartGame"/>
+
+</LinearLayout>
