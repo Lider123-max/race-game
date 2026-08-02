@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_dark">#1A1A2E</color>
+    <color name="player1_color">#E94560</color>
+    <color name="player2_color">#0F9B8E</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="start_btn">#FF9800</color>
+</resources>
